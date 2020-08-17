@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.引入layui的样式文件 -->
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <!-- 2.引入自己的登录样式文件 -->
+    <link rel="stylesheet" href="/assets/css/login.css">
+</head>
+
+<body>
+    <!-- 3.顶部logo -->
+    <div class="layui-main">
+        <img src="/assets/images/logo.png" alt="">
+    </div>
+    <!-- 4.注册和登录区域 -->
+    <div class="loginAndRegBox">
+        <!-- 4.1登录注册标题 -->
+        <div class="titleBox"></div>
+        <!-- 4.2 登录区域 -->
+        <div class="login-box">
+            <a href="javascript:;" id="link_reg">去注册账号</a>
+        </div>
+        <!-- 4.3 注册区域 -->
+        <div class="reg-box" style="display: none;">
+            <a href="javascript:;" id="link_login">去登录</a>
+        </div>
+    </div>
+    <!-- 5.1 引入js文件 -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 5.2 引入自己的js文件 -->
+    <script src="/assets/js/login.js"></script>
+</body>
+
+</html>
