@@ -20,3 +20,27 @@ html,body{
     height: 60px;
     background:url("/assets/images/login_title.png") no-repeat center; 
 }
+
+
+/* 修改表单 */
+.layui-form{
+    padding: 0 30px;
+}
+/* C3样式 */
+.links{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+/* form表单的字体图标，子绝父相 */
+.layui-form-item{
+    position: relative;
+}
+.layui-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.layui-input{
+    padding-left: 32px;
+}
