@@ -1,8 +1,8 @@
 $(function () {
-    // 获取用户信息
+    // 1.1获取用户信息
     getUserInof();
 
-    // 退出
+    // 3.退出
     var layer = layui.layer;
     $("#btnLogout").on('click', function () {
         // 框架提供的提示框
@@ -18,7 +18,7 @@ $(function () {
 
 })
 
-// 获取用户信息（封装到入口函数的外面了）
+// 1.0获取用户信息（封装到入口函数的外面了）
 // 原因：后面的页面还要调用
 function getUserInof() {
     // 发送ajax
@@ -32,15 +32,17 @@ function getUserInof() {
             if (res.status !== 0) {
                 return layui.layer.msg(res.message);
             }
+            // console.log(res)
             // 请求成功，渲染用户头像信息
             renderAvatar(res.data)
         }
     })
 }
 
-// 封装用户头像渲染页面
+// 2.封装用户头像渲染页面
 function renderAvatar(user) {
     // 用户名，（昵称优先，没有的话用username）
+    // console.log(user)
     var name = user.nickname || user.username;
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
     // 2.用户头像
